@@ -1,0 +1,8 @@
+`declare cust_control(name, width, height) in "some.html";
+if ( ~itsmobileCustomControls != "" )
+    include(~service=~current_service, ~theme=~theme, ~name=~itsmobileCustomControls, ~style="x");
+else
+    include(~service="itsmobile", ~theme="99", ~name=nonExt&"cust_controls", ~style="x");
+end;
+cust_control("GEN_NAME", "GEN_WIDTH", GEN_ROWS);`
+                                                                                                                                                             
